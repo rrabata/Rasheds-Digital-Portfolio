@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Rashed Rabata | Sr. Consultant, Operational Strategy</title>
-  <meta name="description" content="Professional portfolio for Rashed Rabata, Sr. Consultant, Operational Strategy." />
+  <title>Rashed Rabata | Professional Portfolio</title>
+  <meta name="description" content="Professional portfolio for Rashed Rabata, featuring consulting experience and AI/ML course artifacts." />
   <style>
     :root {
       --bg: #f3f6fa;
@@ -96,6 +96,7 @@
     .section-head p { margin: 0.35rem 0 0; color: var(--muted); max-width: 760px; }
     .two-col { display: grid; grid-template-columns: 1.05fr 0.95fr; gap: 1rem; }
     .card { padding: 1.45rem; }
+    .grid-2 { display: grid; grid-template-columns: repeat(2, 1fr); gap: 1rem; }
     .grid-3 { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1rem; }
     .grid-4 { display: grid; grid-template-columns: repeat(4, 1fr); gap: 1rem; }
     .pill-row { display: flex; flex-wrap: wrap; gap: 0.6rem; }
@@ -111,22 +112,22 @@
     .impact-card { padding: 1.3rem; }
     .impact-card h4, .slot-card h4, .artifact-card h4 { margin: 0 0 0.45rem; font-size: 1.05rem; }
     .impact-card p, .slot-card p, .artifact-card p { margin: 0; color: var(--muted); }
-    .artifact-shell {
-      display: grid; grid-template-columns: 1.1fr 0.9fr; gap: 1rem;
-      align-items: start;
+    .artifact-card { padding: 1.2rem; overflow: hidden; display: flex; flex-direction: column; }
+    .artifact-card .thumb {
+      aspect-ratio: 16 / 10;
+      border-radius: 14px;
+      overflow: hidden;
+      border: 1px solid var(--line);
+      margin-bottom: 1rem;
+      background: linear-gradient(180deg, #f8fbff 0%, #eef4fa 100%);
     }
-    .artifact-card { padding: 1.45rem; }
+    .artifact-card .thumb img { width: 100%; height: 100%; object-fit: cover; }
     .artifact-meta { display: grid; grid-template-columns: repeat(2, 1fr); gap: 0.8rem; margin: 1rem 0 1.1rem; }
     .mini { padding: 1rem; }
     .mini strong { display: block; margin-bottom: 0.2rem; font-size: 0.92rem; }
     .artifact-list { margin: 0; padding-left: 1.1rem; color: var(--muted); }
     .artifact-list li + li { margin-top: 0.45rem; }
-    .artifact-preview {
-      overflow: hidden; padding: 0.8rem;
-      background: linear-gradient(180deg, #f8fbff 0%, #eef4fa 100%);
-    }
-    .artifact-preview img { border-radius: 12px; border: 1px solid var(--line); }
-    .dl-row { display: flex; flex-wrap: wrap; gap: 0.75rem; margin-top: 1rem; }
+    .dl-row { display: flex; flex-wrap: wrap; gap: 0.75rem; margin-top: auto; padding-top: 1rem; }
     .slot-card { padding: 1.2rem; }
     .slot-card .status {
       display: inline-block; margin-bottom: 0.6rem; padding: 0.28rem 0.58rem;
@@ -136,26 +137,17 @@
     .footer { padding: 0 0 2.75rem; color: var(--muted); font-size: 0.94rem; }
     .contact-card { padding: 1.45rem; }
     .contact-card .label { color: var(--muted); font-size: 0.9rem; font-weight: 700; display: block; margin-bottom: 0.2rem; }
-    .note {
-      background: var(--accent); border: 1px solid #cddcff; padding: 1rem 1.1rem;
-      border-radius: 14px; color: var(--ink);
-    }
-    .artifact-grid {
-      display: grid; grid-template-columns: repeat(2, 1fr); gap: 0.9rem; margin-top: 1rem;
-    }
-    .reference-list { margin: 0; padding-left: 1.2rem; }
-    .reference-list li { margin-bottom: 0.65rem; }
     @media (max-width: 980px) {
-      .hero-grid, .two-col, .artifact-shell { grid-template-columns: 1fr; }
+      .hero-grid, .two-col, .grid-2 { grid-template-columns: 1fr; }
       .stats, .grid-4 { grid-template-columns: repeat(2, 1fr); }
-      .grid-3, .artifact-grid { grid-template-columns: 1fr; }
+      .grid-3 { grid-template-columns: 1fr; }
     }
     @media (max-width: 640px) {
       .stats, .grid-4 { grid-template-columns: 1fr; }
       .nav { flex-direction: column; align-items: flex-start; }
       .artifact-meta { grid-template-columns: 1fr; }
     }
-</style>
+  </style>
 </head>
 <body>
   <div class="topbar">
@@ -166,7 +158,7 @@
           <a href="#bio">Bio</a>
           <a href="#value">Value Proposition</a>
           <a href="#experience">Experience</a>
-          <a href="#artifact">Artifact</a>
+          <a href="#artifacts">Artifacts</a>
           <a href="#collection">Artifact Collection</a>
           <a href="#education">Education</a>
           <a href="#contact">Contact</a>
@@ -184,7 +176,7 @@
           <h2>Sr. Consultant, Operational Strategy</h2>
           <p>Rashed Rabata is a consulting professional focused on operational strategy, warehouse optimization, and AI-enabled problem solving. At enVista, he supports clients in turning facilities into higher-performing operating environments through data analysis, automation evaluation, process design, and implementation planning. His background combines industrial engineering training, applied consulting work, and graduate study in artificial intelligence with a data analytics specialization.</p>
           <div class="hero-actions">
-            <a class="button button-primary" href="artifact-ai-lab.html">View featured artifact</a>
+            <a class="button button-primary" href="#artifacts">View artifacts</a>
             <a class="button button-secondary" href="https://www.linkedin.com/in/rashedrabata/" target="_blank" rel="noreferrer">LinkedIn</a>
           </div>
         </div>
@@ -221,11 +213,7 @@
         <div class="two-col">
           <article class="card">
             <p>Rashed Rabata is a consulting professional focused on operational strategy, warehouse optimization, and AI-enabled problem solving. At enVista, he supports clients in turning facilities into higher-performing operating environments through data analysis, automation evaluation, process design, and implementation planning. His background combines industrial engineering training, applied consulting work, and graduate study in artificial intelligence with a data analytics specialization.</p>
-            <p>
-              With a Master of Science in Industrial Engineering from Purdue University and ongoing graduate study in artificial intelligence,
-              he approaches operations work with both analytical discipline and practical implementation focus. His portfolio is designed to show
-              how academic learning and professional experience can reinforce one another in a fast-changing technical field.
-            </p>
+            <p>With a Master of Science in Industrial Engineering from Purdue University and ongoing graduate study in artificial intelligence, he approaches operations work with both analytical discipline and practical implementation focus. His portfolio is designed to show how academic learning and professional experience can reinforce one another in a fast-changing technical field.</p>
           </article>
           <aside class="card">
             <h4 style="margin:0 0 0.75rem; font-size:1rem;">Core Competencies</h4>
@@ -246,7 +234,7 @@
           </div>
         </div>
         <div class="card">
-          <p style="font-size:1.08rem; margin:0;">I help organizations convert complex operational questions into executable strategies. My value comes from combining industrial engineering, quantitative analysis, and automation insight to produce recommendations leaders can evaluate quickly and implement with confidence.</p>
+          <p style="font-size:1.08rem; margin:0;">I help organizations convert complex operational questions into executable strategies. My value comes from combining industrial engineering, quantitative analysis, and automation insight to produce recommendations leaders can evaluate quickly and implement with confidence. In academic AI work, I focus on turning technical ideas into clear, audience-ready artifacts that explain not only what a tool does, but why the underlying intelligence matters.</p>
         </div>
       </div>
     </section>
@@ -260,7 +248,6 @@
           </div>
         </div>
         <div class="timeline">
-          
           <article class="timeline-item card">
             <h4>Sr. Consultant, Operational Strategy</h4>
             <div class="meta">enVista • Jan 2023 - Present</div>
@@ -289,7 +276,6 @@
           </div>
         </div>
         <div class="grid-3">
-          
           <article class="impact-card card">
             <h4>Facility strategy and capacity expansion</h4>
             <p>Directed the roadmap for a new distribution facility that increased storage capacity by 138%, improved storage density by 96%, and reduced operating costs by 23%.</p>
@@ -306,55 +292,46 @@
       </div>
     </section>
 
-    <section id="artifact">
+    <section id="artifacts">
       <div class="container">
         <div class="section-head">
           <div>
-            <h3>Featured Artifact</h3>
-            <p>This portfolio currently includes one completed course artifact. It is structured with the required artifact information and includes both the final image and a downloadable brief for the assignment.</p>
+            <h3>Course Artifacts</h3>
+            <p>Each artifact is structured as a portfolio-ready entry with objective, process, tools, value proposition, and a tangible deliverable.</p>
           </div>
         </div>
-        <div class="artifact-shell">
+        <div class="grid-2">
           <article class="artifact-card">
-            <h4>AI Lab Artifact: Future of Jordan</h4>
-            <p>This artifact documents an AI Lab exercise that used generative AI to create a future-oriented visual concept of Jordan while preserving recognizable cultural references. The portfolio version presents the finished image, the prompt, and an academic brief as a complete case-study artifact.</p>
+            <div class="thumb">
+              <img src="assets/future-of-jordan-ai-lab.png" alt="AI-generated image of a future version of Jordan featuring Petra, Arabic calligraphy, and people in traditional clothing" />
+            </div>
+            <h4>Artifact 1: AI Lab — Future of Jordan</h4>
+            <p>This artifact documents an AI Lab exercise that used generative AI to create a future-oriented visual concept of Jordan while preserving recognizable cultural references.</p>
             <div class="artifact-meta">
-              <div class="mini"><strong>Title</strong>AI Lab: Future of Jordan</div>
               <div class="mini"><strong>Objective</strong>Create a future-facing image of Jordan that still reflects place, culture, and recognizable national identity.</div>
               <div class="mini"><strong>Value Proposition</strong>Shows prompt design, visual communication, cultural specificity, and the ability to convert AI Lab work into a polished public artifact.</div>
-              <div class="mini"><strong>Relevance</strong>Relevant to instructors, employers, and collaborators who want evidence of emerging AI literacy and audience-aware documentation.</div>
-            </div>
-            <div class="artifact-grid">
-              <div class="mini">
-                <strong>Description</strong>
-                The artifact packages the completed image, the original prompt, and a concise written explanation into a downloadable brief that demonstrates how a lab activity can become a professional resource.
-              </div>
-              <div class="mini">
-                <strong>Unique Value</strong>
-                Combines generative image ideation with culturally grounded prompt design instead of relying on a generic futuristic image prompt.
-              </div>
-              <div class="mini">
-                <strong>Process</strong>
-                <ul class="artifact-list">
-                  <li>Defined the visual goal as a future-oriented image of Jordan.</li><li>Specified Petra, Jordanian people, and Arabic calligraphy to anchor the output culturally.</li><li>Generated the image in ChatGPT using a detailed prompt and reviewed the result for cultural and visual alignment.</li><li>Converted the exercise into a portfolio artifact with a downloadable brief and public-facing explanation.</li>
-                </ul>
-              </div>
-              <div class="mini">
-                <strong>Tools and Technologies Used</strong>
-                <ul class="artifact-list">
-                  <li>ChatGPT image generation</li><li>Prompt writing</li><li>GitHub Pages</li><li>HTML/CSS</li><li>PDF packaging</li><li>APA 7 formatting</li><li>Visual artifact presentation</li>
-                </ul>
-              </div>
             </div>
             <div class="dl-row">
-              <a class="button button-primary" href="artifact-ai-lab.html">Open artifact page</a>
-              <a class="button button-secondary" href="assets/ai-lab-artifact-brief.pdf" target="_blank" rel="noreferrer">Download artifact brief</a>
-              <a class="button button-secondary" href="assets/future-of-jordan-ai-lab.png" target="_blank" rel="noreferrer">Open image</a>
+              <a class="button button-primary" href="artifact-ai-lab.html">Open artifact</a>
+              <a class="button button-secondary" href="assets/ai-lab-artifact-brief.pdf" target="_blank" rel="noreferrer">Download brief</a>
             </div>
           </article>
-          <aside class="artifact-preview card">
-            <img src="assets/future-of-jordan-ai-lab-web.jpg" alt="Preview of the Future of Jordan AI Lab artifact showing Petra, Arabic calligraphy, futuristic buildings, and people in traditional clothing" />
-          </aside>
+
+          <article class="artifact-card">
+            <div class="thumb">
+              <img src="assets/siri-ml-artifact-collage.png" alt="Collage showing Apple Maps preferred route guidance and Photos memory creation screens" />
+            </div>
+            <h4>Artifact 2: Siri, Machine Learning, and Everyday Personalization</h4>
+            <p>This artifact explains how model-driven assistance appears in everyday iPhone experiences by analyzing Apple Maps preferred routes and Photos memory movie creation through a machine learning and deep learning lens.</p>
+            <div class="artifact-meta">
+              <div class="mini"><strong>Objective</strong>Show how familiar Apple features can be interpreted as applied machine learning and deep-learning-backed personalization.</div>
+              <div class="mini"><strong>Value Proposition</strong>Demonstrates the ability to translate consumer AI features into a clear, evidence-based artifact for academic and professional audiences.</div>
+            </div>
+            <div class="dl-row">
+              <a class="button button-primary" href="artifact-siri-ml.html">Open artifact</a>
+              <a class="button button-secondary" href="assets/siri-ml-artifact-brief.pdf" target="_blank" rel="noreferrer">Download brief</a>
+            </div>
+          </article>
         </div>
       </div>
     </section>
@@ -364,19 +341,19 @@
         <div class="section-head">
           <div>
             <h3>Artifact Collection</h3>
-            <p>The course requires at least five artifacts by the end of the class. This portfolio is structured for that requirement and currently shows progress honestly: one completed artifact and additional reserved slots for future coursework.</p>
+            <p>The course requires at least five artifacts by the end of the class. This portfolio shows two completed artifacts and maintains space for the remaining required entries.</p>
           </div>
         </div>
         <div class="grid-4">
           <article class="slot-card card">
             <span class="status">Completed</span>
             <h4>Artifact 1: AI Lab Case Study</h4>
-            <p>Completed and published with the required artifact information, APA 7 references, the final image, and a downloadable brief.</p>
+            <p>Published with the required artifact information, references, final image, and a downloadable brief.</p>
           </article>
           <article class="slot-card card">
-            <span class="status">Reserved</span>
-            <h4>Artifact 2</h4>
-            <p>Reserved for a future course artifact defined by upcoming assignments.</p>
+            <span class="status">Completed</span>
+            <h4>Artifact 2: Siri and Personalized Intelligence</h4>
+            <p>Published with screenshots, documentation links, machine learning analysis, and a downloadable brief.</p>
           </article>
           <article class="slot-card card">
             <span class="status">Reserved</span>
@@ -420,19 +397,19 @@
             <p style="margin:0; color:var(--muted);">Lean Six Sigma<br />Forklift Certified Operator - EMS</p>
           </article>
           <article class="card">
-            <h4 style="margin:0 0 0.5rem;">Languages and Technical Tools</h4>
-            <p style="margin:0; color:var(--muted);">English, Arabic, Spanish (B1); SQL, Excel, Microsoft Office Suite, AutoCAD, MATLAB, RStudio, MiniTab, FlexSim, CoppeliaSim (VREP), CATIA, C Programming, LaTeX, QI-Macros</p>
+            <h4 style="margin:0 0 0.5rem;">Technical Tools</h4>
+            <p style="margin:0; color:var(--muted);">Microsoft Office Suite, SQL, QI-Macros, AutoCAD, C, RStudio, MATLAB, MiniTab, LaTeX, FlexSim, CoppeliaSim (VREP), and CATIA.</p>
           </article>
         </div>
       </div>
     </section>
 
-    <section id="contact">
+    <section id="contact" style="padding-top:0;">
       <div class="container">
         <div class="section-head">
           <div>
             <h3>Contact</h3>
-            <p>Professional contact information and profile links.</p>
+            <p>Professional contact information and public profile link.</p>
           </div>
         </div>
         <div class="grid-3">
@@ -446,17 +423,15 @@
           </article>
           <article class="contact-card card">
             <span class="label">LinkedIn</span>
-            <a href="https://www.linkedin.com/in/rashedrabata/" target="_blank" rel="noreferrer">Rashed on LinkedIn</a>
+            <a href="https://www.linkedin.com/in/rashedrabata/" target="_blank" rel="noreferrer">linkedin.com/in/rashedrabata</a>
           </article>
         </div>
       </div>
     </section>
-  </main>
 
-  <div class="container footer">
-    <div class="note">
-      This portfolio is designed to function as a professional resource site. The artifact reflection required by the course is submitted separately to the instructor and is intentionally not reproduced here.
+    <div class="container footer">
+      Portfolio built for coursework and professional presentation. Reflections required by the course are submitted separately from the public portfolio.
     </div>
-  </div>
+  </main>
 </body>
 </html>
