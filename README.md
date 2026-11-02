@@ -5,11 +5,11 @@ GitHub Pages-ready static portfolio. No dependencies, bundler, API keys, or buil
 ## Course ownership (important)
 
 - **Artifacts 1–5: AIML-500** (existing prerequisite-course artifacts, preserved)
-- **Artifact 6: AIML-501** — Machine Learning Algorithms: A Visual Framework for Real-World Applications
+- **Artifacts 6–7: AIML-501** — Machine Learning Algorithms: A Visual Framework for Real-World Applications
 
 ## Repository contents
 
-- `index.html` — landing page and all six artifact cards
+- `index.html` — landing page and all seven artifact cards
 - `artifact-ai-lab.html`, `artifact-siri-ml.html`, `artifact-faceid.html`, `artifact-predictive-text.html`, `artifact-newsletter.html` — AIML-500
 - `artifact-ml-algorithms.html` — AIML-501 responsive, interactive infographic with 12 algorithm descriptions, use cases, references, filter buttons, and print-to-PDF support
 - `assets/aiml501-algorithm-framework.svg` — downloadable infographic overview
@@ -30,3 +30,12 @@ If the repository is already hosted on GitHub Pages, do **not** change its deplo
 ## Scope and integrity
 
 Artifact 6 is an explanatory framework: business use cases illustrate possibilities; no trained models or business outcomes are represented. Generative AI, BERT and GPT pretraining are not inaccurately classified as simply supervised or unsupervised.
+
+## New: AIML-501 neural network visual PDF guide (second AIML-501 artifact)
+
+- `artifact-neural-networks.html` — Artifact 7 detail page
+- `assets/aiml501-neural-networks.pdf` — downloadable PDF
+- `assets/aiml501-neural-network-preview.svg` — portfolio preview graphic
+- `AIML501_NEURAL_NETWORK_REFLECTION.md` — short Brightspace submission reflection
+
+Upload the entire updated site at repository root; retain all assets and existing artifact pages. Confirm links to Artifact 7 and the PDF embed and download work on the public site. The presentation does not claim measured Playground results; add your own screenshots or metrics after running experiments if required.
