@@ -50,3 +50,23 @@ Upload the entire updated site at repository root; retain all assets and existin
 The sources identify precise reporting boundaries. Do not interpret the DeepSeek-V3 $5.576M assumed compute rental figure as all-in development cost or compare H800 and H100 GPU-hours as equal monetary units.
 
 To update an existing deployment: replace `index.html` and `README.md`; add the new artifact HTML and the three new assets under `assets/`. All earlier artifacts are preserved.
+
+
+## AIML-501 Artifact 9 — Beyond the Black Box
+
+- `artifact-explainable-ai.html`: embedded visual portfolio entry
+- `assets/aiml501-explainable-ai.pdf`: four-page visual study of XAI, transparency, evaluation and metrics
+- `assets/aiml501-explainable-ai-explanation.pdf`: explanatory text, reflection and sources
+- `assets/aiml501-xai-preview.svg`: accessible preview graphic
+
+The public home page links to this artifact under Course Artifacts. Interpretability methods and behavioral evaluation are intentionally described as complementary, not interchangeable.
+
+
+## AIML-501 Artifact 9 — Beyond the Black Box
+
+- `artifact-explainable-ai.html`: embedded visual portfolio entry
+- `assets/aiml501-explainable-ai.pdf`: four-page visual study of XAI, transparency, evaluation and metrics
+- `assets/aiml501-explainable-ai-explanation.pdf`: explanatory text, reflection and sources
+- `assets/aiml501-xai-preview.svg`: accessible preview graphic
+
+The public home page links to this artifact under Course Artifacts. Interpretability methods and behavioral evaluation are intentionally described as complementary, not interchangeable.
