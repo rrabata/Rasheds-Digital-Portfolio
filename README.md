@@ -70,3 +70,12 @@ The public home page links to this artifact under Course Artifacts. Interpretabi
 - `assets/aiml501-xai-preview.svg`: accessible preview graphic
 
 The public home page links to this artifact under Course Artifacts. Interpretability methods and behavioral evaluation are intentionally described as complementary, not interchangeable.
+
+
+### Artifact 10 — Choosing the Right Model (AIML-501)
+
+- Portfolio page: `artifact-model-selection.html`
+- Four-page visual matrix: `assets/aiml501-model-selection-matrix.pdf`
+- Explanatory research, classification rationale, reflection and references: `assets/aiml501-model-selection-explanation.pdf`
+- Preview: `assets/aiml501-model-selection-preview.svg`
+- Note: all published performance figures are attributed to sources; no inference benchmarking was conducted.
